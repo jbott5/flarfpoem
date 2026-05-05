@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>flarf poem!!</title>
+  <style>
+    body {
+      background-image: url("background.gif");
+      background-repeat: repeat;
+      background-color: #111;
+      font-family: Georgia, serif;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    /* dark overlay to dim the background gif */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.55);
+      z-index: 0;
+    }
+
+    .poem {
+      max-width: 520px;
+      padding: 32px 28px;
+      position: relative;
+      z-index: 2;
+      line-height: 1.85;
+      font-size: 1rem;
+      color: #f0ece4;
+    }
+
+    .poem p {
+      margin: 0;
+    }
+
+    img {
+      position: fixed;
+      z-index: 1;
+      height: auto;
+      opacity: 0.92;
+    }
+
+    /* left side: stacked loosely, slightly offset */
+    .img1 {
+      width: 155px;
+      top: 18%;
+      left: 3%;
+      transform: rotate(-2deg);
+    }
+
+    .img2 {
+      width: 140px;
+      top: 52%;
+      left: 5%;
+      transform: rotate(1.5deg);
+    }
+
+    /* right side: stacked loosely, slightly offset */
+    .img3 {
+      width: 150px;
+      top: 15%;
+      right: 3%;
+      transform: rotate(2deg);
+    }
+
+    .img4 {
+      width: 145px;
+      top: 50%;
+      right: 4%;
+      transform: rotate(-1.5deg);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="poem">
+    <p>
+      "i am feeling better today though! dyed my hair and went to class !!"
+      <br><br>
+      the first thing i did when i felt better was to dye my hair
+      <br><br>
+      The first thing I did<br>
+      the day I got better<br>
+      was to dye my hair<br>
+      <br>
+      Nothing dramatic<br>
+      Nothing too wild.<br>
+      Just something small.<br>
+      To prove I was myself again<br>
+      <br>
+      After a week of aching<br>
+      And a lot of complaining<br>
+      My temperature was normal<br>
+      and my head wasn't yelling<br>
+      <br>
+      It's weird<br>
+      That to regain the sense of ourselves– through silly self-made rituals<br>
+      Only shows outside?<br>
+      <br>
+      How strange<br>
+      but that's okay!<br>
+      I rinsed it out<br>
+      and stepped back into the day
+    </p>
+  </div>
+
+  <img class="img1" src="pic1.jpg" alt="">
+  <img class="img2" src="pic2.jpeg" alt="">
+  <img class="img3" src="pic3.webp" alt="">
+  <img class="img4" src="pic4.jpg" alt="">
+
+</body>
+</html>
